@@ -1,7 +1,7 @@
 #!/bin/bash
-#!/bin/bash
-sudo apt-get update -y
-sudo apt-get install -y docker.io
-sudo systemctl start docker
-sudo usermod -aG docker ubuntu
+sudo yum update -y
+sudo amazon-linux-extras install docker -y
+sudo service docker start
+sudo usermod -aG docker $USER
+
 
